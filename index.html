@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>애드센스 광고 두 개 추가</title>
+    </head>
+    <body>
+        <div class="top-ads">
+            <div id="ad-top-left" class="revenue_unit_item adsense">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle top-left" data-ad-client="ca-pub-00000000" data-ad-slot="0000000000" data-ad-format="rectangle" data-full-width-responsive="true" style="width: 316px"></ins>
+                <script>
+                    try {
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    } catch (e) {}
+                </script>
+            </div>
+            <div id="ad-top-right" class="revenue_unit_item adsense">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle top-right" data-ad-client="ca-pub-00000000" data-ad-slot="0000000000" data-ad-format="rectangle" data-full-width-responsive="true" style="width: 316px"></ins>
+                <script>
+                    if ($(window).width() < 710) {
+                        $('#ad-top-right').remove();
+                    } else {
+                        try {
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        } catch (e) {}
+                    }
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

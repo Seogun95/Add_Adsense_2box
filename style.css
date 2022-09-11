@@ -1,0 +1,21 @@
+.top-ads {
+    margin: 20px 0 20px;
+    height: auto !important;
+    display: flex !important;
+}
+
+#ad-top-left,
+#ad-top-right {
+    margin: auto;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.adsbygoogle.top-left,
+.adsbygoogle.top-right {
+    display: block;
+    width: 316px;
+    height: 280px;
+}
